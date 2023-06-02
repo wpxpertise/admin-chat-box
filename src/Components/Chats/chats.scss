@@ -1,0 +1,92 @@
+.acb_sidebar{
+    .acb_chats{
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        .signinpanel{
+            position: relative;
+            .acb_formContainer{
+                background-color: rgba(0, 0, 0, 0.4);
+                height: 800px;
+                position: absolute;
+                width: 185vh;
+                left: 0px;
+                top: -51px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media only screen and (max-width: 1366px){
+                    height: 540px;
+                }
+
+                .acb_fromWrapper{
+                    background-color: white;
+                    padding: 20px 60px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        input{
+                            padding: 15px;
+                            border: none;
+                            width: 250px;
+                            border-bottom: 1px solid #a7bcff;
+                            &::placeholder{
+                                color: rgb(175,175,175);
+                            }
+                        }
+                        button{
+                            background-color: #7b96ec;
+                            color: white;
+                            padding: 10px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            border: none;
+                        }
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            color: #8da4f1;
+                            font-size: 12px;
+                        cursor: pointer;
+                            img{
+                                width: 32px;
+                            }
+                        }
+                       
+                    }
+                    span{
+                        color: #5d5b8d;
+                        font-size: 12px;
+                    }
+                    .acb_signup{
+                        cursor: pointer;
+                        color: rgb(251, 8, 255);
+                    }
+                    
+                }
+                
+                .acb_logo {
+                    color: #5d5b8d;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+                .acb_title {
+                    color: #5d5b8d;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+
+.wcs_datatable_staff{
+    height: 600px;
+    padding: 20px;
+
+    position:relative;
+    // border-radius: 20px;
+    h4.pro_badge {
+        position: absolute;
+        left: 20px;
+        top: 47px;
+        background: #8504a7;
+        color: white;
+        padding: 3px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 1px;
+
+        animation-name:glow;
+        animation-duration:1s;
+        animation-iteration-count:infinite;
+        animation-direction:alternate;
+
+        @keyframes glow{
+            from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+            to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+          }
+    }
+    .wec_left_free{
+        opacity: 0.4;
+        background-color: rgb(250,250,250,0.2);  
+    }
+
+
+    .wcs_cellWithImg{
+        display: flex;
+        align-items: center;
+
+        .wcs_cellImg{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .cellWithStatus{
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cellWithStatus.id-1{
+        background-color: rgba(0,128,0,0.05);
+        color: green;
+        width: 48px;
+        text-align: center;
+    }
+    .cellWithStatus.id-0{
+        background-color: rgba(0,128,0,0.05);
+        color: crimson; 
+    }
+
+    .wcs_cellAction{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .wcs_viewButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 1px dotted rgba(0,0,139, 0.596);
+            cursor: pointer;
+        }
+        .wcs_deleteButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: rgb(172, 3, 146);
+            border: 1px dotted rgba(125, 2, 55, 0.596);
+            cursor: pointer;
+        }
+    }
+}
+// Fix checkbox and outline 
+input.PrivateSwitchBase-input.css-1m9pwf3{
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+}
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-columnHeader:focus, .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cell:focus {
+    outline: none !important;
+}

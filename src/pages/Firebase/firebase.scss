@@ -1,0 +1,231 @@
+.acb_add_mail{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+    .acb_mails_container{
+        flex: 6;
+
+        .acb_top, .acb_bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+            margin: 20px;
+            padding: 10px;
+            // to make side by side
+            display: flex;
+
+            h1{
+                color: lightgray;
+                font-size: 20px;
+            }
+            h1.setting_panel{flex: 3;}
+            h1.tesing_panel{flex: 3;}
+            h1.setting_panel a {
+                color: lightgray;
+                text-decoration: none;
+                cursor:pointer;
+                &:hover{
+                    color: teal;
+                }
+            }
+            .acb_left{
+                flex: 3; 
+                text-align: center; 
+                margin: 25px;
+                // border-right: 2px solid teal;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap; // to set all inside the wrap with the given width screen
+                    gap: 20px;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .formInput{
+                        width: 60%;
+                        textarea{
+                            height: 150px;
+                        }
+                        input,textarea{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            background-color: #F0F0F1;
+    
+                            &:focus{
+                                outline: none;
+                                box-shadow: none;
+                            }
+    
+                        }
+                        input.PrivateSwitchBase-input.MuiSwitch-input.css-1m9pwf3{
+                            width: 10rem;
+                            min-width: 6rem;
+                        }
+
+                        .acbapikey{
+                            position: relative;
+                            .acbapikeypassVisibility{
+                                position: absolute;
+                                right: 0px;
+                                font-size: 18px;
+                                top: 10px;
+                            }
+                        }
+
+                    }
+               
+
+                    .acb_test_mail_send{
+                        width: 160px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        float: left;
+                    }
+                }
+
+                // Export button 
+                .acb_test_mail_export{
+                    width: 160px;
+                    padding: 10px;
+                    border: none;
+                    background-color: #272822;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    float: left;
+                    &:hover{
+                        background-color: #2F3129;
+                    }
+                }
+                label{
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #1D2327;
+                    font-size: 12px;
+                    cursor: pointer;
+                    text-align: center;
+                }
+                img.acb_test_file_upload{
+                    width: 38px;
+                    margin-right: 6px;
+                }
+                .acb_upload_save{
+                    width: 100px;
+                    padding: 10px;
+                    border: none;
+                    background-color: #272822;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+                
+            }
+
+            .acb_right{
+                flex: 3; 
+                margin: 25px;
+                // border-right: 2px solid teal;
+
+                form{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap; // to set all inside the wrap with the given width screen
+                    gap: 20px;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .formInput{
+                        width: 60%;
+                        textarea{
+                            height: 150px;
+                        }
+                        input,textarea{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            background-color: #F0F0F1;
+    
+                            &:focus{
+                                outline: none;
+                                box-shadow: none;
+                            }
+    
+                        }
+
+                        .wcsPass{
+                            position: relative;
+                            .passVisibility{
+                                position: absolute;
+                                right: 0px;
+                                font-size: 18px;
+                                top: 10px;
+                            }
+                        }
+
+                    }
+                    .acb_test_mail_send{
+                        width: 160px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        float: left;
+                    }
+                    .acb_test_mail_reset{
+                        width: 42px;
+                        padding: 9px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        cursor: pointer;
+                        float: right;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 170px;
+                    }
+                }
+
+                // player 
+                .wcs-player-wrapper {
+                    position: relative;
+                    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+                    margin-top: 14px;
+                    border: 6px solid white;
+
+                    .wcs-react-player {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      }
+                  }
+                  
+                  
+            }
+        }
+    }
+}
+
+// Switch fix 
+.acb_add_mail .acb_mails_container .acb_top .acb_left form .formInput input.PrivateSwitchBase-input.MuiSwitch-input.css-1m9pwf3, .acb_add_mail .acb_mails_container .acb_bottom .acb_left form .formInput input.PrivateSwitchBase-input.MuiSwitch-input.css-1m9pwf3 {
+    width: 7rem;
+    min-width: 6rem;
+    height: 46px;
+}
